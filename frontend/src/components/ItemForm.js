@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './ItemForms.css'
+
 
 const ItemForm = ({ item, onSuccess }) => {
     const [firstname, setfirstname] = useState('');

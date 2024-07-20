@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ItemList.css'
+
 
 const ItemList = ({ onEdit, onDelete }) => {
     const [items, setItems] = useState([]);
@@ -32,7 +32,7 @@ const ItemList = ({ onEdit, onDelete }) => {
             {item.Year} : {item.Section} : {item.Department} :
             {item.Subject} : {item.Citizenship} 
 
-        <button1 onClick={() => onEdit(item)}>Edit</button1>
+        <button onClick={() => onEdit(item)}>Edit</button>
         <button onClick={() => onDelete(item.id)}>Delete</button>
             </li>
             ))}
